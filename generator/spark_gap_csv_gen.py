@@ -101,6 +101,6 @@ loseOutcomeResult_df = df_with_row_number2.filter(col("row_num") == 1).drop("row
 
 theLastDF= loseOutcomeResult_df.unionByName(winOutcomeResult_df).orderBy( "Date")
 
-theLastDF.coalesce(1).write.option("header","true").csv("trail1Output.csv")
+theLastDF.coalesce(1).write.mode("overwrite").option("header","true").csv("trail1Output.csv")
 
 spark.stop()

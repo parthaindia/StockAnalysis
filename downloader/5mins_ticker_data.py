@@ -155,8 +155,8 @@ def extract_and_process_tickers(input_file):
 
 
 if __name__ == "__main__":
-    start_date = "2024-12-26"
-    end_date = "2024-12-27"
+    start_date = "2024-12-27"
+    end_date = "2024-12-28"
     output_directory = "nse_data_per_ticker"
     log_directory = "logs"
     input_file = "../resources/output.csv"
