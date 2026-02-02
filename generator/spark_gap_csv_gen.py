@@ -5,6 +5,12 @@ spark = SparkSession.builder \
     .appName("Filter and Join CSVs") \
     .getOrCreate()
 
+(''
+ ''
+ 'kigytfhtfutf'
+ ''
+ ''
+ '')
 # Read the first CSV with columns: ticker, Date, gap_percent, avg_volume_30, Close
 df1 = spark.read.csv("../downloader/data/", header=True, inferSchema=True)
 # print("df1 without filter ")
